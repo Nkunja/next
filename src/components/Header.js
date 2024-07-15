@@ -1,5 +1,3 @@
-// components/Header.js
-
 "use client"
 import { useState } from 'react';
 
@@ -12,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
-      <div className="text-2xl font-bold">MyLogo</div>
+      <div className="text-2xl font-bold">Logo</div>
       <div className="relative">
         <input
           type="text"

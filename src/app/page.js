@@ -1,13 +1,11 @@
-import Image from "next/image";
+import Header from '../components/Header';
 
-export default function Home() {
+export default function Home({ Component, pageProps }) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-6xl font-bold text-center">Welcome to Next.js!</h1>
-      <p className="text-xl text-center">Get started by editing{' '}
-        <code className="text-blue-700">pages/index.js</code>
-      </p>
-    </main>
-      
+    <>
+      {pageProps && Object.keys(pageProps).map(key => (
+        <div key={key}>{pageProps[key]}</div>
+      ))}
+    </>
   );
 }
